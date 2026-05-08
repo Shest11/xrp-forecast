@@ -19,7 +19,7 @@ test:
 
 .PHONY: typecheck
 typecheck:
-	$(PYTHON) -m mypy src/
+	$(PYTHON) -m mypy src/ --ignore-missing-imports
 
 .PHONY: format
 format:

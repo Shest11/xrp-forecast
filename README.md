@@ -1,16 +1,12 @@
 # XRP Cryptocurrency Price Forecast with Prophet
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![TestPyPI](https://img.shields.io/badge/TestPyPI-v0.1.0-orange)
-
-## 📌 О проекте
+## О проекте
 
 Данный проект был разработан в **первом семестре** по предмету **«Информатика»** в рамках изучения прогнозирования временных рядов. Проект представляет собой пакет для прогнозирования цены криптовалюты **XRP** с использованием библиотеки **Prophet** от Facebook (Meta).
 
 > **Примечание:** Это **базовая версия** проекта. Просьба не обращать внимание на высокое значение MAPE (около 48% после оптимизации).
 
-## 🎯 Функциональность
+## Функциональность
 
 - Загрузка и предобработка исторических данных XRP
 - Визуализация временного ряда (тренд, сезонность, остатки)
@@ -19,9 +15,19 @@
 - Прогнозирование цены на заданное количество дней вперёд
 - Оценка качества модели (MAE, RMSE, MAPE, R²)
 
-## 📦 Установка
+## Установка
 
 ### Через TestPyPI (рекомендуемый способ)
 
 ```bash
 pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ xrp-forecast-prophet
+```
+
+### Из исходников
+
+```bash
+git clone https://github.com/Shest11/xrp-forecast.git
+cd xrp-forecast
+git checkout feature/xrp-forecast-package
+make setup
+
